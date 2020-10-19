@@ -44,8 +44,8 @@ create table posts(
 alter table posts add foreign key (thread_id) references threads(id);
 
 -- アプリケーション用ユーザ作成
-create user app@localhost identified by "Techanony-app-wtb1118";
-grant select, insert on techanony.* to app@localhost;
+create user *****@localhost identified by "*****";
+grant select, insert on *****.* to *****@localhost;
 
 -- リセット
 delete from tags_tb;
