@@ -1,0 +1,108 @@
+/* ホーム用CSS */
+
+/* メイン */
+.content{
+    animation: fadeIn 3s ease 0s 1 normal;
+    margin: 10px;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+.content h2{
+    margin: 0px 10px;
+    padding-left: 10px;
+    background: #e1e1e1;
+    border-left: 3px solid #333;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.content h3{
+    margin-right: 20px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000000;
+}
+
+/* サイト説明 */
+.top{
+    margin: 30px 20px;
+    display: inline-block;
+}
+.top-div{
+    margin: 5px 40px;
+    float: right;
+}
+.top-div h1{
+    margin-bottom: 10px;
+}
+.top-div p{
+    margin-left: 4px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+.top-img{
+    width: 200px;
+    margin-left: 10px;
+}
+.top-h1{
+    width: 300px;
+    float: left;
+}
+.top-text{
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+/* 人気スレッドリスト */
+.hot-thread-list{
+    width: 50%;
+    height: 192px;
+    margin-bottom: 30px;
+    float: left;
+}
+.hot-thread-list ul{
+    margin: 8px 20px;
+}
+.hot-thread-list li{
+    margin: 5px 0px;
+    list-style-type: none;
+}
+.hot-thread-list a{
+    color: #000;
+}
+.hot-thread-list a:hover{
+    font-weight: bold;
+}
+
+/* 新規スレッドリスト */
+.new-thread-list{
+    width: 50%;
+    height: 192px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.new-thread-list ul{
+    margin: 8px 20px;
+}
+.new-thread-list li{
+    margin: 5px 0px;
+    list-style-type: none;
+}
+.new-thread-list a{
+    color: #000;
+}
+.new-thread-list a:hover{
+    font-weight: bold;
+}
+
+/* お知らせ */ 
+.notice-table{
+    padding: 20px;
+}
+.notice-table dt{
+    margin-right: 10px;
+    float: left;
+    font-weight: bold;
+    color: #333333;
+}

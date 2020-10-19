@@ -1,0 +1,292 @@
+/* ページ共通CSS */
+
+/**************
+    全体 
+***************/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #c1c1c1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/**************
+    ヘッダー
+***************/
+
+.header{
+    height: 60px;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 5px 20px;
+    position: fixed;
+    background-color: #333333;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    z-index: 9997;
+}
+
+/* ロゴ */
+.logo-div{
+    display: inline-block;
+}
+.logo-a{
+    display: inline-block;
+}
+
+/* 検索フォーム */
+.search-form{
+    margin-left: 15%;
+    display: inline;
+}
+.search-input{
+    width: 400px;
+    height: 30px;
+    margin-bottom: 50px;
+    padding: 10px;
+    vertical-align: middle;
+    border-radius: 50px;
+    outline: none;
+}
+.search-submit{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 45px;
+    vertical-align: middle;
+}
+
+/* ナビゲーション */
+.navi-div{
+    margin-right: 100px;
+    float: right;
+}
+.navi-table{
+    margin-top: 20px;
+}
+.navi-item-thread{
+    width: 140px;
+    padding-right: 45px;
+    display: inline-block;
+    text-align: center;
+}
+.navi-create-thread{
+    padding: 3px 12px;
+    background: #78b42f;
+    color: rgba(255, 255, 255, 1.0);
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.navi-create-thread:hover{
+    background: #689531;
+    transition: 0.2s;
+}
+
+.navi-item{
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+.navi-link{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+}
+.navi-link:hover{
+    color: rgba(255, 255, 255, 1.0);
+    border-bottom: solid 2px #ffffff;
+}
+
+/**************
+    コンテナ
+***************/
+
+.container {
+    width: 100%;
+    padding-top: 60px;
+    display: -webkit-flex;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* メイン */
+.main {
+    width: 77%;
+    margin: 2% 5%;
+    display: block;
+    background: #f1f1f1;
+    text-align: left;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+/* サイドバー */
+.sidebar{
+    width: 200px;
+    padding: 0.5em 1em;
+    margin: 2% 0;
+    color: #333333;
+    background: #f1f1f1;
+    border-top: solid 5px #333333;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.sidebar-items{
+    margin-bottom: 20px;
+}
+.sidebar-item--fixed{
+    position: sticky;
+    margin-bottom: 0;
+    top: 10px;
+    z-index: 1;
+}
+.sidebar-item{
+    margin: 10px;
+}
+
+/* ジャンルリスト */
+.genre-list{
+    margin: 10px;
+}
+.genre-item{
+    color: #333333;
+}
+.genre-item:hover{
+    font-weight: bold;
+}
+
+/* タグリスト */
+.tags-list{
+    margin: 10px;
+}
+.tag-item{
+    color: #333333;
+}
+.tag-item:hover{
+    font-weight: bold;
+}
+
+/* スレッド作成モーダル */
+#create_thread_modal{
+    width: 1000px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position:fixed;
+    z-index: 9999;
+    background-color: #f1f1f1;
+    color: #666666;
+    top: 50%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -300px;
+}
+.create-thread{
+    margin: 40px;
+}
+.create-thread h2{
+    margin-bottom: 20px;
+}
+.create-thread-form p{
+    font-size: 18px;
+}
+.create-thread-form span{
+    margin: 0px 10px;
+    color: #cc0000;
+    font-size: 14px;
+}
+.thread-input{
+    width: 400px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-indent: 5px;
+    outline: none;
+}
+.thread-input-area{
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    resize: none;
+    outline: none;
+}
+.agree-cnb{
+    display: inline-block;
+}
+.agree{
+    display: inline;
+}
+#back_modal{
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+}
+#thread_submit{
+    width: 140px;
+    height: 40px;
+    margin-top: 20px;
+    float: right;
+    background: #78b42f;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
+#thread_submit:hover{
+    background: #689531;
+}
+
+/* モーダル オーバーレイ */
+#create_thread_or{
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    z-index: 9998;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/**************
+    フッター
+***************/
+.footer{
+    margin-top: auto;
+
+    height: 100px;
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+}
+.footer-logo{
+    width: 147.6;
+    height: 66;
+    padding: 10px;
+    float: left;
+}
+.to-top{
+    padding: 20px;
+    color: #fff;
+    float: right;
+}
+.copyright{
+    padding-top: 70px;
+    padding-right: 20px;
+}

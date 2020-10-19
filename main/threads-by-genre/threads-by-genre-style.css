@@ -1,0 +1,21 @@
+/* ジャンル別スレッド一覧用CSS */
+
+/* メイン */
+.content{
+    margin: 30px;
+}
+.thread{
+    margin: 10px 0px;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+}
+.thread-url{
+    color: #000;
+    font-size: 25px;
+}
+.thread-url:hover{
+    text-decoration: underline;
+}
+.not-thread{
+    margin: 10px 0px;
+}
